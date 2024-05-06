@@ -1,6 +1,5 @@
-﻿using ConsoleApp4.Model;
-
-
+﻿using ConsoleApp4.Extention;
+using ConsoleApp4.Model;
 
 List<Employee> Employees = new List<Employee>();
 
@@ -13,12 +12,15 @@ while (true)
     Console.WriteLine("\t4 -  Removing an employee ");
     Console.WriteLine("\t5 -  Edit  employee ");
 
-    if (int.TryParse(Console.ReadLine(), out int n))
+    var selectOperations = Console.ReadLine();
+    Console.Clear();
+    if (int.TryParse(selectOperations, out int n))
     {
-        Console.Clear();
         EmployeeOperations employeeOperations = (EmployeeOperations)n;
         employeeOperations.ExecuteCommand(Employees);
 
+        //Или
+        //((EmployeeOperations)n).ExecuteCommand(Employees);
     }
 
 }
