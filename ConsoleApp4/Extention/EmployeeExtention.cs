@@ -95,11 +95,10 @@ namespace ConsoleApp4.Extention
                 Employees[i].LastName = ReadInput("Введите LastName: ");
                 Employees[i].Age = ReadInput("Введите Age: ");
                 Employees[i].Position = ReadInput("Введите Position: ");
+                return;
             }
-            else
-            {
-                Console.WriteLine("Неверный номер");
-            }
+            Console.WriteLine("Неверный номер");
+ 
         }
     }
 }
