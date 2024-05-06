@@ -75,8 +75,7 @@ namespace ConsoleApp4.Extention
         /// <param name="Employees"></param>
         public static void DeleteEmployee(this List<Employee> Employees)
         {
-            Console.WriteLine("Введите номер");
-            if (int.TryParse(Console.ReadLine(), out int n))
+            if (int.TryParse(ReadInput("Введите номер: "), out int n))
             {
                 Employees.RemoveAt(n);
                 return;
@@ -89,8 +88,7 @@ namespace ConsoleApp4.Extention
         /// <param name="Employees"></param>
         public static void EditEmployee(this List<Employee> Employees)
         {
-            Console.WriteLine("Введите номер");
-            if (int.TryParse(Console.ReadLine(), out int i))
+            if (int.TryParse(ReadInput("Введите номер: "), out int i))
             {
                 Console.WriteLine("Введите новые значения/чтобы не менять значения введите пробел ");
                 Employees[i].FirstName = ReadInput("Введите FirstName: ");
