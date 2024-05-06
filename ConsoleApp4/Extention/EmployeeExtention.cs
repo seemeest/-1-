@@ -3,15 +3,6 @@
 namespace ConsoleApp4.Extention
 {
 
-    // Extension метод (метод расширения) добавляет новый функционал List Employee <br/>
-    // Методы:<br />
-    // AddEmployee - добавление нового работника в список <br />
-    // WriteEmployees - вывод всех работников в списке <br />
-    // FindEmployee - метод поиска по имени ,фамилии и должности <br />
-    // DeleteEmployee - удаление работника по индексу из коллекции <br />
-    // EditEmployee - измиинение данные сотрудника<br />
-    // 
-
     /// <summary>
     /// Extension метод (метод расширения) добавляет новый функционал List Employee <br/>
     /// Методы:<br />
